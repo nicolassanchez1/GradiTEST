@@ -26,21 +26,32 @@
         border-right: 0;
         border-left: 0;
         color: $light-grey;
-        font-size: 1.125rem;
+        font-size: 0.938em;
         padding: 1.5625rem 0;
         gap: 0.625rem;
         align-items: center;
 
         &-container {
             gap: 0.625rem;
+            flex-wrap: wrap;
         }
     }
+
+    &__span{
+        margin-top: 0.313em;
+        align-self: start;
+    }
+
 
     &__description {
         span {
             color: $light-grey;
             font-size: 0.75rem;
         }
+    }
+
+    &__price-wrap{
+        gap: 10px;
     }
 
     &__price {
@@ -55,6 +66,11 @@
         &-value {
             color: black;
         }
+    }
+
+    &__price-max{
+        text-decoration: line-through;
+        color: #cccccc;
     }
 
     &__name {
