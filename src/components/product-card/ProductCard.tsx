@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
-import { BreadCrumb } from 'components/bread-crumb'
-import { Carousel } from 'components/carousel'
-import { IProduct } from 'models/Product'
-import { VariantsForm } from 'components/variants-form'
 import { getRoutes } from '.'
 import './ProductCard.scss'
+import { IProduct } from '../../models/Product'
+import { BreadCrumb } from '../bread-crumb'
+import { Carousel } from '../carousel'
+import { VariantsForm } from '../variants-form'
 
 export const ProductCard: React.FC<{ product: IProduct }> = ({ product }) => {
   const { title } = product
@@ -14,8 +14,8 @@ export const ProductCard: React.FC<{ product: IProduct }> = ({ product }) => {
   return (
     <div className="product-card flex-1">
       <BreadCrumb routes={routes} />
-      <section className="product-card__container flex">
-        <Carousel />
+      <section className="product-card__container flex w-full flex">
+        <Carousel images={product.media} />
         <VariantsForm product={product} />
       </section>
     </div>

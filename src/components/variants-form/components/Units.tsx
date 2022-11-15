@@ -1,6 +1,6 @@
 import React from 'react'
-import { formatMoney } from 'utils/value'
 import { IUnits } from '.'
+import { formatMoney } from '../../../utils/value'
 
 export const Units: React.FC<IUnits> = ({ price, purchaseData, setPurchaseData }) => {
   const addUnits = (value: number): void => {

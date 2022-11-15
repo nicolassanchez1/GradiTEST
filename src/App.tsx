@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Header } from 'components/header'
-import { ProductCard, PRODUCT_MODEL } from 'components/product-card'
-import { Footer } from 'components/footer'
-import { IProduct } from 'models/Product'
+import { IProduct } from './models/Product'
+import { Header } from './components/header'
+import { PRODUCT_MODEL, ProductCard } from './components/product-card'
+import { Footer } from './components/footer'
 
 const App: React.FC = () => {
   const [product, setProduct] = useState<IProduct>(PRODUCT_MODEL)
