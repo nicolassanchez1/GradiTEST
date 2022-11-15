@@ -1,0 +1,102 @@
+.variants-form {
+    &__buttons {
+        gap: 1.25rem;
+        margin-top: 0.625rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__cart-units {
+        width: 1.25rem;
+        text-align: center;
+    }
+
+    &__color {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &-fill {
+            width: 0.75rem;
+            height: 0.75rem;
+            border: 0.0625rem solid $gray-border;
+        }
+    }
+
+    &__colors, &__sizes {
+        border: 0.0625rem solid $gray-border;
+        border-right: 0;
+        border-left: 0;
+        color: $light-grey;
+        font-size: 1.125rem;
+        padding: 1.5625rem 0;
+        gap: 0.625rem;
+        align-items: center;
+
+        &-container {
+            gap: 0.625rem;
+        }
+    }
+
+    &__description {
+        span {
+            color: $light-grey;
+            font-size: 0.75rem;
+        }
+    }
+
+    &__price {
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+
+        &-label {
+            font-size: 0.875rem;
+            color: $light-grey;
+        }
+
+        &-value {
+            color: black;
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: 0.625rem 0;
+    }
+
+    &__size {
+        width: 1.875rem;
+        height: 1.875rem;
+        border: 0.0625rem solid $light-grey;
+
+        &-value {
+            font-size: 0.625rem;
+        }
+    }
+
+    &__sizes {
+        border-top: 0;
+    }
+
+    &__units {
+        padding: 1.5625rem 0;
+        justify-content: space-between;
+    }
+
+    &__quantity {
+        &-box {
+            padding: 0.5rem 0.875rem;
+            gap: 1.25rem;
+            border: 0.0625rem solid $light-grey;
+            font-size: 0.875rem;
+        }
+
+        &-button {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__vendor {
+        color: $light-grey;
+        font-size: 0.875rem;
+    }
+}

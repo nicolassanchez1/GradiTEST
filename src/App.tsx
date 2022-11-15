@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import { Header } from 'components/header'
+import { ProductCard, PRODUCT_MODEL } from 'components/product-card'
+import { Footer } from 'components/footer'
+import { IProduct } from 'models/Product'
 
-function App() {
+const App: React.FC = () => {
+  const [product, setProduct] = useState<IProduct>(PRODUCT_MODEL)
+
+  useEffect(() => {
+    getProduct()
+  }, [])
+
+  const getProduct = async () => {
+    const { data } = await axios(`${process.env.REACT_APP_BASE_URL}`)
+    setProduct(data)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <ProductCard product={product} />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

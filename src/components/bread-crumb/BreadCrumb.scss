@@ -1,0 +1,11 @@
+.bread-crumb {
+    gap: 0.25rem;
+
+    &__route {
+        color: $light-grey;
+    }
+
+    &__last-route {
+        color: black;
+    }
+}

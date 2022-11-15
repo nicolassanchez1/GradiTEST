@@ -1,0 +1,41 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+.selected-item {
+    border: 0.0625rem solid black !important;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.border {
+    border: 1px solid black;
+}
