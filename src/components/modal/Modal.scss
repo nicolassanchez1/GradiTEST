@@ -1,0 +1,36 @@
+.modal-wrapper {
+  &_view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 6px 7px 18px 15px rgb(75 33 24 / 20%);
+    position: fixed;
+    width: 400px;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: white;
+
+    p span {
+      font-weight: bold;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &_back-drop {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
