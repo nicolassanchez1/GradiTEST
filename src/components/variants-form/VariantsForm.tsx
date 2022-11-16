@@ -42,7 +42,7 @@ export const VariantsForm: React.FC<{ product: IProduct }> = ({ product }) => {
         <Sizes sizes={variants.sizes} purchaseData={purchaseData} setPurchaseData={setPurchaseData} />
         <Units price={price} purchaseData={purchaseData} setPurchaseData={setPurchaseData} />
         <div className="variants-form__buttons flex">
-          <Button text="Add to favorite" onClick={() => alert('holi1')} />
+          <Button text="Add to favorite" onClick={() => {}} />
           <Button text="Add to cart" black onClick={addToCart} type="submit" />
         </div>
         <p className="variants-form__description">{ReactHtmlParser(description)}</p>
