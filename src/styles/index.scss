@@ -1,16 +1,18 @@
-@import "./colors.scss";
-@import "./global.scss";
+@import './colors.scss';
+@import './global.scss';
 
 // components
-@import "../components/bread-crumb/BreadCrumb.scss";
-@import "../components/variants-form/VariantsForm.scss";
+@import '../components/bread-crumb/BreadCrumb.scss';
+@import '../components/variants-form/VariantsForm.scss';
 
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }

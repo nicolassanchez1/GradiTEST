@@ -1,42 +1,45 @@
-
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-1 {
-    flex: 1;
+  flex: 1;
 }
 
 .h-screen {
-    height: 100vh;
+  height: 100vh;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .rounded-full {
-    border-radius: 100%;
+  border-radius: 100%;
 }
 
 .selected-item {
-    border: 0.0625rem solid black !important;
+  border: 0.0625rem solid black !important;
 }
 
 .w-full {
-    width: 100%;
+  width: 100%;
 }
 
 .border {
-    border: 1px solid black;
+  border: 1px solid black;
 }

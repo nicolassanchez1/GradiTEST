@@ -5,8 +5,8 @@ export const useViewMobile = (media: number = 769) => {
 
   React.useEffect(() => {
     updateDimensions()
-    window.addEventListener("resize", updateDimensions)
-    return () => window.removeEventListener("resize", updateDimensions)
+    window.addEventListener('resize', updateDimensions)
+    return () => window.removeEventListener('resize', updateDimensions)
   }, [])
   const updateDimensions = () => {
     const width = window.innerWidth
@@ -14,4 +14,3 @@ export const useViewMobile = (media: number = 769) => {
   }
   return width < media
 }
-

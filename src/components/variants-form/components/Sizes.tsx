@@ -3,7 +3,7 @@ import { ISizes } from '.'
 
 export const Sizes: React.FC<ISizes> = ({ sizes, purchaseData, setPurchaseData }) => (
   <section className="variants-form__sizes flex">
-    <span className='variants-form__span'>Size:</span>
+    <span className="variants-form__span">Size:</span>
     <div className="variants-form__sizes-container flex">
       {sizes.map(size => (
         <div
