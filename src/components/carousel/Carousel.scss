@@ -1,7 +1,45 @@
-.images-wrapper{
+.images-wrapper {
   width: 50%;
 
-  &__first{
+  &_carousel {
+    width: 100%;
+    height: 34.75em;
+    vertical-align: top;
+    opacity: 0;
+    transition: 1s ease all;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+
+  &_controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .controls-icon {
+      width: 2em;
+      height: 100%;
+      font-size: 1.5em;
+      background-color: #4a4a4a75;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+  }
+
+  &__first {
     width: 100%;
     height: 700px;
     background-position: center;
@@ -9,9 +47,9 @@
     background-size: cover;
   }
 
-  &__wrap{
-   margin-top: 15px;
-   justify-content: space-around;
+  &__wrap {
+    margin-top: 15px;
+    justify-content: space-around;
     gap: 18px;
 
     > div {
@@ -21,5 +59,43 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+  }
+
+  &-carousel {
+    width: 100%;
+
+    .keen-slider__slide img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: #000;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 100%;
   }
 }
